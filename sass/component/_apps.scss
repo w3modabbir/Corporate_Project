@@ -1,0 +1,113 @@
+/* ========= apps part start ============*/
+#apps{
+    background: url(../images/app-bg.jpg) center no-repeat;
+    background-size: cover;
+    @include pgap(120px, 120px, 0px, 0px);
+    position: relative;
+    z-index: 1;
+    background-attachment: fixed;
+    z-index: 1;
+    &::after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(85deg, rgba(26, 44, 121, 0.8) 30%, rgba(232, 5, 102, 0.9) 100%) !important;
+        z-index: -1;
+    }
+    .apps_main1{
+        text-align: center;
+        
+        .apps_main{
+            .apps_head{
+                
+                h3{
+                    @include fonts('Karla',42px,600,$menucolor);
+                    text-transform: capitalize;
+                    padding-bottom: 25px;
+                }
+                p{
+                    @include fonts('Karla',18px,400,$menucolor);
+                    line-height: 28px;
+                    padding: 0 280px;
+                }
+    
+                
+            }
+            .apps_btn{
+                display: flex;
+                justify-content: center;
+                margin-top: 50px;
+                .apps_btn_text{
+                    border: 1px solid #fff;
+                    padding: 15px 30px;
+                    margin: 0 12px;
+                    border-radius: 30px;
+                    transition: all linear .3s;
+                    &:hover{
+                        background-color: #fff;
+                    }
+                    &:hover a i{
+                        color: $secondarycolor;
+                    }
+                    &:hover a h4{
+                        color: $secondarycolor;
+                    }
+                    &:hover a p{
+                        color: $secondarycolor;
+                    }
+                   a{
+                        i{
+                            color: #fff;
+                            font-size: 40px;
+                            padding-bottom: 10px; 
+                            transition: all linear .3s;
+                        }
+                        h4{
+                            @include fonts('Karla',16px,400,$menucolor);
+                            text-transform: capitalize;
+                            padding-bottom: 10px; 
+                            transition: all linear .3s;
+                        }
+                        p{
+                            @include fonts('Karla',14px,400,$menucolor);
+                            text-transform: capitalize;
+                            transition: all linear .3s;
+                        }
+                   }
+                }
+            }
+        //     .apps_btn{
+        //         display: flex;
+        //         align-items: center;
+        //         border: 1px solid #fff;
+        //         justify-content: center;
+        //         padding: 15px 20px;
+        //         border-radius: 50px;
+        //         .apps_btn_icon{
+        //             i{
+        //                 color: #fff;
+        //                 font-size: 40px;
+        //                 margin-right: 15px;
+        //             }
+        //         }
+        //         .apps_btn_text{
+        //             h4{
+        //                 @include fonts('Karla',16px,400,$menucolor);
+        //                 text-transform: capitalize;
+        //                 padding-bottom: 10px;
+        //             }
+        //             p{
+        //                 @include fonts('Karla',14px,400,$menucolor);
+        //                 text-transform: capitalize;
+        //             }
+        //         }
+        //    }
+           
+        }
+    }
+   
+}
+/* ========= apps part end ============*/

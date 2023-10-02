@@ -1,0 +1,118 @@
+/* ========= navbar part start ============*/
+.navbar{
+    padding: 0;
+    .navbar_main{
+        .navbar_menu{
+            .nav-item{
+                .nav-link{
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+.navbar_main{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    .navbar_menu{
+        li{
+            position: relative;
+            padding-right: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:last-child{
+                padding-right: 0;
+            }
+            .down_icon{
+                line-height: 80px;
+                text-align: center;
+                color: $menucolor;
+                margin-left: 3px;
+                transition: all linear .3s;
+                font-size: 17px;
+            }
+            a{
+                line-height: 80px;
+                font-family: "Poppins";
+                font-size: 15px;
+                font-weight: 500;
+                color: $menucolor;
+                text-transform: capitalize;
+                display: block;
+                transition: all linear 0.3s;
+            
+            }
+            &:hover .down_icon{
+                transform: rotate(180deg);
+                color: $menucolor;
+            }
+
+            .sub-menu{
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+                background-color: $menubg;
+                position: absolute;
+                width: 220px;
+                top: 100%;
+                left: 0px;
+                padding: 0 !important;
+                transform: translateY(10px);
+                transition: all linear 0.3s;
+                opacity: 0;
+                visibility: hidden;
+                z-index: 999;
+                filter: alpha(opacity=0);
+                z-index: 9999;
+                li{
+                    padding: 0 22px;
+                    display: block;
+                    border-bottom: 1px solid #333;
+                    transition: all linear 0.3s;
+                    &:last-child{
+                        border-bottom: none;
+                    }
+                    a{
+                        color: #4b4b4b;
+                        font-size: 15px;
+                        line-height: 40px;
+                        transition: all linear 0.3s;
+                        &::after{
+                            display: none;
+                        }
+                    }
+                    &:hover{
+                        
+                        background: #e80566;
+
+                    }
+                    &:hover a{
+                        color: #fff;
+
+                    }
+                }
+            }
+            &:hover .sub-menu{
+                transform: translateY(0px);
+                opacity: 1;
+                visibility: visible;
+                pointer-events: all;
+                filter: alpha(opacity=100);
+            }
+        }
+    }
+}
+.background{
+    background-color: #1A2C79;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999999;
+}
+.background .navbar_menu li a{
+    line-height: 60px;
+}
+

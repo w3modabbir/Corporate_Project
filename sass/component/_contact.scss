@@ -1,0 +1,25 @@
+/*========= contact part start ===========*/
+#contact{
+    @include pgap(50px, 50px, 0px, 0px);
+
+    .contact_text{
+        h4{
+            @include fonts('Karla',28px,700,$secondarycolor);
+            padding-bottom: 20px;
+        }
+        p{
+            @include fonts('Karla',16px,400,$pracolor);
+        }
+    }
+    .contact_btn{
+        text-align: end;
+        a{
+            background-color: $randombg;
+            padding: 15px 40px;
+            border-radius: 5px;
+            @include fonts('Karla',18px,500,$menucolor);
+            text-transform: capitalize;
+        }
+    }
+}
+/*========= contact part end ===========*/

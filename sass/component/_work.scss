@@ -1,0 +1,116 @@
+/* ========= work part start ============*/
+#work{
+    @include pgap(100px, 80px, 0px, 0px);
+
+    .work_head{
+        text-align: center;
+        margin-bottom: 70px;
+        h3{
+            @include fonts('Karla',32px,600,$secondarycolor);
+            text-transform: capitalize;
+            padding-bottom: 20px;
+        }
+        p{
+            @include fonts('Karla',18px,400,$pracolor);
+            line-height: 24px;
+            padding: 0 330px;
+            position: relative;
+            
+            &::after{
+                position: absolute;
+                content: '';
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: -20px;
+                width: 70px;
+                height: 2px;
+                background-color:$hoverbg ;               
+            }
+        }
+    }
+
+    .work_category{
+        // padding-top: 30px;
+        // padding-bottom: 27px;
+
+        button{
+            padding: 10px 17px;
+            border: 1px solid $primarycolor;
+            background-color: transparent;
+            border-radius: 30px;
+            color: $primarycolor;
+            font-size: 14px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            text-transform: capitalize;
+            transition: all linear .3s;
+            margin-right: 10px;
+            &:hover{
+                background-color: $randombg;
+                color: #fff;
+                border-color: $primarycolor;
+            }
+            
+
+        }
+        .mixitup-control-active{
+            background-color: $randombg !important;
+            color: #fff;
+        }
+    }
+
+    .work-main{
+        margin-top: 50px;
+        .work_item{
+            padding: 9px;
+            background-color: #f5f5f5;
+            position: relative;
+            margin-bottom: 24px;
+            .work_overlay{
+                background: linear-gradient(to right, #1A2C79 2%, #e80566 82%);
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                opacity: 0;
+                transition: all linear .3s;
+            }
+
+            .work_content{
+                position: absolute;
+                text-align: center;
+                padding-left: 1em;
+                padding-right: 1em;
+                width: 100%;
+                bottom: 80px;
+                left: 50%;
+                transform: translateX(-50%);
+                transition: all linear .3s;
+                opacity: 0;
+                overflow: hidden;
+                h4{
+                    @include fonts('Karla',22px,700,$menucolor);
+                    text-transform: capitalize;
+                    padding-bottom: 10px;
+                }
+                p{
+                    @include fonts('Karla',18px,400,$menucolor);
+                    text-transform: capitalize;
+                }
+            }
+            &:hover .work_overlay{
+                opacity: 1;
+            }
+            &:hover .work_content{
+                opacity: 1;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}
+/* ========= work part end ============*/

@@ -1,0 +1,67 @@
+/* ========= banner part start ============*/
+#banner{
+    background: url(../images/banner-2.jpg) center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    &::after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, rgba(26, 43, 121, 0.9) 30%, rgba(26, 44, 121, 0.4) 100%);
+       
+    }
+    .banner_content{
+        height: 100vh;
+        position: relative;
+        z-index: 99;
+       .banner_text{
+        h5{
+            @include fonts('Karla',28px,600,$menucolor);
+            text-transform: uppercase;
+            @include pgap(0px, 15px, 0px, 0px);
+            position: relative;
+            &::after{
+                position: absolute;
+                content: '';
+                left: 0;
+                bottom: 0;
+                width: 70px;
+                height: 2px;
+                background-color:$hoverbg ;               
+            }
+        }
+        h2{
+            @include fonts('Karla',52px,800,$menucolor);
+            @include pgap(15px, 15px, 0px, 0px);
+            line-height: 58px;
+        }
+        p{
+            @include fonts('Karla',18px,500,$menucolor);
+            padding-right: 110px;
+            line-height: 28px;
+        }
+        .banner_btn{
+            @include pgap(50px, 0px, 0px, 0px);
+            a{
+                background-color: $menubg;
+                @include pgap(15px, 15px, 30px, 30px);
+                border-radius: 4px;
+                @include fonts('Karla',18px,500,$secondarycolor);
+                text-transform: capitalize;
+                transition: all linear .3s;
+                &:hover{
+                    background-color: $hovercolor;
+                    color: $menucolor;
+                }
+            }
+        }
+       }
+    }
+   
+}
+/* ========= banner part end ============*/

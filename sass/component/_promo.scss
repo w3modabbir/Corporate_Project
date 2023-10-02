@@ -1,0 +1,63 @@
+/* ========= promo part start ============*/
+#promo{
+    position: relative;
+    z-index: 999;
+    margin-top: -80px;
+    .promo_item{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding: 48px;
+        position: relative;
+        border-radius: 10px;
+        background-color: #fff;
+        z-index: 1;
+        &::before{
+            // background: linear-gradient(85deg,rgba(232, 5, 102, 0.9) 30%, rgba(26, 44, 121, 0.8) 100% ) !important;
+            position: absolute;
+            content: '';
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 0%;
+            border-radius: 10px;
+            filter: brightness(40%);
+            opacity: 0;
+            transition: all linear .3s;
+            z-index: -1;
+            background: url(../images/promo-2.jpg) center no-repeat;
+            background-size: cover;
+        } 
+        &:hover::before{
+            opacity: 1;
+            height: 100%;
+        }
+        &:hover i{
+           color: #fff;
+        }
+        &:hover h3{
+            color: #fff;
+         }
+         &:hover p{
+            color: #fff;
+         }
+        i{
+            color: $primarycolor;
+            font-size: 40px;
+            transition: all linear .3s;
+        }
+        h3{
+            @include fonts('Karla',28px,700,$secondarycolor);
+            text-transform: capitalize;
+            @include pgap(20px, 20px, 0px, 0px);
+            transition: all linear .3s;
+        }
+        p{
+            @include fonts('Karla',15px,500,$pracolor);
+            line-height: 24px;
+            font-style: italic;
+            transition: all linear .3s;
+            padding-right: 75px;
+        }
+
+    }
+}
+/* ========= promo part end ============*/

@@ -1,0 +1,167 @@
+/* ==============================Extra Extra Large Device============================== */
+@media(min-width:1400px){
+    #header .navbar_main .navbar_menu .menu-item-has-children:hover .sub-menu {
+        transform: translateY(0px);
+        opacity: 1;
+        visibility: visible;
+    }
+    #header .navbar_main .navbar_menu .menu-item-has-children:hover a .plus::after {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+
+}
+/* ==============================Extra Extra Large Device end ========================= */
+
+/* ==============================Extra Large Device============================== */
+@media(min-width:1200px) and (max-width:1399.98px){
+    #header .navbar_main .navbar_menu .menu-item-has-children:hover .sub-menu {
+        transform: translateY(0px);
+        opacity: 1;
+        visibility: visible;
+    }
+    #header .navbar_main .navbar_menu .menu-item-has-children a .plus::after {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+}
+/* ==============================Extra Large Device end ============================== */
+
+/* ==============================Large Device============================== */
+@media(min-width:992px) and (max-width:1199.98px){
+/* navbar part start */
+#header .navbar_main .navbar_menu .menu-item-has-children:hover .sub-menu {
+    transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;
+}
+#header .navbar_main .navbar_menu .menu-item-has-children a .plus::after {
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+/* navbar part end */
+/* banner part start */
+/* banner part start */
+/* banner part start */
+/* banner part start */
+    
+}
+/* ==============================Large Device end ============================== */
+
+/* ==============================Medium Device============================== */
+@media(min-width:768px) and (max-width:991.98px){
+
+
+}
+/* ==============================Medium Device end============================== */
+
+/* ============================== Small Device============================== */
+@media(min-width:576px) and (max-width:767.98px){
+
+   
+}
+/* ============================== Small Device end ============================== */
+
+/* ==============================Extra Small Device============================== */
+@media(max-width:575.98px){
+/* topheader part start */  
+#topheader {
+	display: none;
+} 
+/* topheader part end */  
+
+/* navbar part start */ 
+.navbar-brand {
+	line-height: 35px;
+}  
+.navbar-toggler i{
+    color: black;
+    font-size: 25px;
+}
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar_menu{
+    background-color: black;
+    position: fixed;
+    top: 15px;
+    width: 280px;
+    height: 100vh;
+    top: 50px;
+    right: 0;
+    overflow-y: auto;
+    z-index: 999;
+}
+#header .navbar_main .navbar_menu .nav-item {
+	display: block;
+    margin: 0;
+    padding: 0;
+    
+}
+#header .navbar_main .navbar_menu .nav-item a {
+	line-height: 40px;
+	font-size: 15px;
+	font-weight: 600;
+	color: #fff;
+    transition: all linear .3s;
+    padding: 12px 15px;
+    border-bottom: 1px solid #333;
+}
+/* #header .navbar_main .navbar_menu .nav-item a:first-child{
+    
+} */
+#header .navbar_main .navbar_menu .nav-item a:hover{
+    color: #ffbc13;
+}
+#header .navbar_main .navbar_menu .nav-item a::after {
+	display: none;
+}
+#header .navbar_main .navbar_menu .nav-item a .plus::after, #header .navbar_main .navbar_menu li a .plus::before {
+	background-color: #aaa;
+    right: 10px;
+}
+#header .navbar_main .navbar_menu .nav-item a .plus::after, #header .navbar_main .navbar_menu li a .plus::after {
+	background-color: #aaa;
+    right: 10px;
+}
+#header .navbar_main .navbar_menu .menu-item-has-children a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header .navbar_main .navbar_menu .nav-item .sub-menu {
+	position: relative;
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+    border: none !important;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    transform: translateY(0px);
+    padding: 0px 0;
+    
+}
+#header .navbar_main .navbar_menu .nav-item .sub-menu .nav-item{
+  border: none;
+  padding: 0px !important;
+  background-color: #eee;
+}
+#header .navbar_main .navbar_menu .nav-item .sub-menu .nav-item a{
+    color: #aaa;
+    transition: all linear .3s;
+    padding: 12px 45px;
+    border-bottom: 1px solid #333;
+}
+#header .navbar_main .navbar_menu .nav-item .sub-menu .nav-item a:hover{
+    color: #ffbc13;
+}
+/* navbar part end */   
+/* topheader part start */   
+
+
+}
+/* ====================Extra Small Device end===================== */
+
+
+
+

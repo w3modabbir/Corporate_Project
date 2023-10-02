@@ -1,0 +1,135 @@
+/* ========= tesimonial part start ============*/
+#testimunial{
+    @include pgap(100px, 100px, 0px, 0px);
+    background: $testimunialbg;
+    position: relative;
+    i{
+        color: $primarycolor;
+        font-size: 20px;
+        cursor: pointer;
+        border: 1px solid $primarycolor;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        border-radius: 2px;
+        line-height: 40px;
+        transition: all linear .3s;
+        transition: all linear .3s;
+        &:hover{
+            background-color: $randombg;
+            color: #fff;
+        }
+    }
+    .left{
+        position: absolute;
+        top: 200px;
+        right: 190px;
+        z-index: 999;
+    }
+    .right{
+        position: absolute;
+        top: 200px;
+        right: 125px;
+        z-index: 999;
+    }
+    .testi_head{
+        text-align: center;
+        margin-bottom: 70px;
+        h3{
+            @include fonts('Karla',32px,600,$secondarycolor);
+            text-transform: capitalize;
+            padding-bottom: 20px;
+        }
+        p{
+            @include fonts('Karla',18px,400,$pracolor);
+            line-height: 24px;
+            padding: 0 330px;
+            position: relative;
+            
+            &::after{
+                position: absolute;
+                content: '';
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: -20px;
+                width: 70px;
+                height: 2px;
+                background-color:$hoverbg ;               
+            }
+        }
+    }
+
+    .testi_item{
+        padding: 45px;
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin: 5px 12px;
+        .test_icon{
+            i{
+                color: #D1D3E0;
+                font-size: 37px;
+                border: none !important;
+                &:hover{
+                    display: none;
+                }
+            }
+        }
+        .test_text{
+            padding-top: 25px;
+            p{
+                @include fonts('Karla',15px,400,$pracolor);
+                line-height: 24px;
+                padding-right: 20px;
+            }
+        }
+        .test_man{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 20px;
+            .text_main1{
+                display: flex;
+                align-items: center;
+                .text_man_img{
+                    width: 50px;
+                    height: 50px;
+                    img{
+                        border-radius: 50%;
+                    }
+                }
+                .text_name{
+                    margin-left: 10px;
+                    h4{
+                        @include fonts('Karla',24px,600,$secondarycolor);
+                        text-transform: capitalize;
+                        padding-bottom: 10px;
+                    }
+                    p{
+                        @include fonts('Karla',15px,400,$pracolor);
+                        text-transform: capitalize;
+                    }
+                }
+                
+            }
+            .text_main_icom{
+                i{
+                    color: #f5b759;
+                    font-size: 16px;
+                    border: none !important;
+                    width: 16px !important;
+                    height: 0 !important;
+                    &:hover{
+                        display: none;
+                    }
+                }
+                p{
+                    @include fonts('Karla',15px,400,$pracolor);
+                    padding-top: 8px;
+                }
+            }
+        }
+        
+    }
+}
+/* ========= tesimonial part end ============*/

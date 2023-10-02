@@ -1,0 +1,72 @@
+/* ========= footer part start ============*/
+#footer{
+    @include pgap(100px, 100px, 0px, 0px);
+    background: $footerbg;
+
+    .footer_first_item{
+        .footer_logo{
+            padding-bottom: 10px;
+        }
+        p{
+            @include fonts('Karla',15px,400,$menucolor);
+            line-height: 24px;
+            padding-bottom: 20px;
+        }
+        .footer_icon{
+            a{
+                margin-right: 5px;
+                i{
+                    width: 30px;
+                    height: 30px;
+                    line-height: 30px;
+                    text-align: center;
+                    border-radius: 50%;
+                    background-color: #fff;
+                    color: $primarycolor;
+                }
+            }
+        }
+    }
+
+    .footer_item{
+        .footer_head{
+            h3{
+                @include fonts('Karla',28px,700,$menucolor);
+                padding-bottom: 35px;
+                text-transform: capitalize;
+            }
+        }
+        .footer_menu{
+            ul{
+                li{
+                    margin-bottom: 8px;
+                    a{
+                        @include fonts('Karla',16px,400,#909090);
+                        text-transform: capitalize;
+                        transition: all linear .3s;
+                        &:hover{
+                            color: $menucolor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#cpoyright{
+    padding: 30px 0px;
+    background-color: $randombg;
+    border-top: 1px solid #ddd;
+    .copy_text{
+        text-align: center;
+        p{
+            @include fonts('Karla',15px,400,$menucolor);
+            span{
+                color: $hovercolor;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+/* ========= footer part end ============*/

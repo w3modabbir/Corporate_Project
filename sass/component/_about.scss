@@ -1,0 +1,87 @@
+/* ========= about part start ============*/
+#about{
+    @include pgap(100px, 100px, 0px, 0px);
+    .about_img_item{
+        position: relative;
+        img{
+            border-radius: 63% 37% 30% 70% / 50% 45% 55% 50%;
+            border: 15px solid $primarycolor;
+        }
+        .about_circle1{
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 0;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: #1A2C79;
+            z-index: -1;
+        }
+        .about_circle2{
+            position: absolute;
+            content: '';
+            left: 30px;
+            top: 50px;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: #e80566;
+            z-index: -1;
+        }
+    }
+
+
+    .about_text_item{
+        margin-left: 30px;
+        h3{
+            @include fonts('Karla',42px,600,$secondarycolor);
+            text-transform: capitalize;
+            line-height: 42px;
+            @include pgap(0px, 20px, 0px, 0px);
+        }
+        p{
+            @include fonts('Karla',18px,400,$pracolor);
+            line-height: 24px;
+            font-style: italic;
+            transition: all linear .3s;
+            padding-right: 271px;
+        }
+        .about_text{
+            @include pgap(30px, 50px, 0px, 0px);
+            ul{
+                li{
+                    @include fonts('Karla',18px,400,$pracolor);
+                    padding-bottom: 10px;
+                    &:last-child{
+                        padding-bottom: none;
+                    }
+                    i{
+                        color: #e80566;
+                        margin-right: 7px;
+                    }
+                    strong{
+                        color: $secondarycolor;
+                    }
+                }
+            }
+        }
+        .about_text_btn{
+            a{
+                background-color: $randombg;
+                @include pgap(15px, 15px, 30px, 30px);
+                border-radius: 4px;
+                @include fonts('Karla',18px,500,$menucolor);
+                text-transform: capitalize;
+                transition: all linear .3s;
+                &:hover{
+                    background-color: $hovercolor;
+                    color: $menucolor;
+                }
+            }
+        }
+        
+    }
+}
+
+/* ========= about part end ============*/

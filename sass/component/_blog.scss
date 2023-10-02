@@ -1,0 +1,101 @@
+/* ========= blog part start ============*/
+#blog{
+    @include pgap(100px, 100px, 0px, 0px);
+    background: $testimunialbg;
+    .blog_head{
+        text-align: center;
+        margin-bottom: 70px;
+        h3{
+            @include fonts('Karla',32px,600,$secondarycolor);
+            text-transform: capitalize;
+            padding-bottom: 20px;
+        }
+        p{
+            @include fonts('Karla',18px,400,$pracolor);
+            line-height: 24px;
+            padding: 0 330px;
+            position: relative;
+            
+            &::after{
+                position: absolute;
+                content: '';
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: -20px;
+                width: 70px;
+                height: 2px;
+                background-color:$hoverbg ;               
+            }
+        }
+    }
+
+    .blog_item{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border: 1px solid #1A2C79;
+        padding: 3px;
+       
+       .blog_text{
+            padding: 20px;
+            .blog_text_item{
+                display: flex;
+                justify-content: space-between;
+                .blog_text_item1{
+                   display: flex;
+                   align-items: center;
+                    img{
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                        border: 1px solid #1A2C79;
+                        padding: 5px;
+                    }
+                    p{
+                        @include fonts('Karla',18px,400,$primarycolor);
+                        text-transform: capitalize;
+                        margin-left: 8px;
+                    }
+                }
+                .blog_text_item1{
+                    p{
+                        @include fonts('Karla',14px,400,$pracolor);
+                        i{
+                            margin-right: 4px;
+                        }
+                    }
+                }
+            }
+            .blog_text_head{
+                margin-top: 20px;
+                h3{
+                    @include fonts('Karla',20px,600,$primarycolor);
+                    text-transform: capitalize;
+                    padding-bottom: 15px;
+                }
+                p{
+                    @include fonts('Karla',18px,400,$pracolor);
+                    line-height: 24px;
+                    padding-right: 56px;
+    
+                }
+                a{
+                    @include fonts('Karla',18px,500,$secondarycolor);
+                    text-transform: capitalize;
+                    transition: all linear .3s;
+                    padding-top: 20px;
+                    display: inline-block;
+                    &:hover{
+                        color: $hovercolor;
+                    }
+                    i{
+                        transition: all linear .3s;
+                        font-size: 14px;
+                    }
+                    &:hover i{
+                        margin-left: 3px;
+                    }
+                }
+            }
+       }
+    }
+}
+/* ========= blog part end ============*/
